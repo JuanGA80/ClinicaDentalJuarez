@@ -31,6 +31,7 @@
                     </ul>
                 </nav>
                 <a href="#" class="btn"><button>Contacto</button></a>
+                <a onclick="openNav()" href="#" class="menu-xs" id="btn-menu"><i class="bi bi-list"></i></a>
                 <a onclick="openNav()" href="#" class="menu" id="btn-menu"><button>Menú</button></a>
                 <div class="overlay" id="mobile-menu">
                     <a onclick="closeNav()" class="close">&times;</a>
@@ -46,17 +47,12 @@
 
         <!--Seccion hero-->
         <div class="hero">
-            <a onclick="prevSlide(-1)" class="prev" id="prev">&#8810;</a>
+            <a onclick="prev(-1)" class="prev" id="prev">&#8810;</a>
                 <div class="container" id="container">
                     <section class="slider-container" id="slider">
                         <img src="img/imagen_slider_nuevo.jpeg" alt="" class="slider-item">
                         <img src="img/consulta_gratis.jpg" alt="" class="slider-item">
                         <img src="img/juarez-agosto.jpeg" alt="" class="slider-item">
-                        <img src="img/juarez_blanqueamiento.png" alt="" class="slider-item">
-                        <img src="img/juarez_julio_uno.jpg" alt="" class="slider-item">
-                        <img src="img/juarez-agosto.jpeg" alt="" class="slider-item">
-                        <img src="img/juarez_blanqueamiento.png" alt="" class="slider-item">
-                        <img src="img/juarez_julio_uno.jpg" alt="" class="slider-item">
                     </section>
                 </div>
             <a onclick="nextSlide(1)" class="next" id="next">&#8811;</a>
@@ -77,7 +73,61 @@
             <img src="img/juarez_blanqueamiento.png" alt="" class="promotion-item">
             <img src="img/juarez_julio_uno.jpg" alt="" class="promotion-item">
         </section>
+        <!--Opiniones-->
+        <div class="title"><h2>CLIENTES SATISFECHOS</h2></div>
+        <div class="sub">
+            <hr class="subrayado">
+        </div>
+        <br>
+        <div class="container-opiniones">
+            <div class="item-opiniones one">
+              <h6>Maria Fernanda Salazar Cruz</h6>
+              <p>
+                Lo recomiendo por completo. Me dieron una excelente atención y
+                buenas promociones. Me hicieron una extracción de muelas y no me
+                dolió.
+              </p>
+              <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i></span>
+            </div>
+            <div class="item-opiniones two">
+              <h6>Marlene Rangel</h6>
+              <p>Excelente servicio, muy atentos, recomiendo ampliamente.</p>
+              <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i></span>
+            </div>
+            <div class="item-opiniones four">
+              <h6>Omar Reyes</h6>
+              <p>
+                Los recomiendo ampliamente, me atendieron una urgencia dental y el
+                trato fue maravilloso muchisimas gracias.
+              </p>
+              <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i></span>
+            </div>
+            <div class="item-opiniones five">
+              <h6>Emiliano Olmos</h6>
+              <p>
+                Lo recomiendo ampliamente, me atendieron de manera cortés y puntual,
+                sus instalaciones son limpias y amplias, excelentes tratamientos y
+                promociones.
+              </p>
+              <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i></span>
+            </div>
+          </div>
 
+          <!--Mas info-->
+          <div class="info">
+            <p class="info-p">
+                Calidad, calidez y compromiso en todos nuestros servicios. ¡Garantizado!
+            </p>
+            <a class="info-btn"><p class="info-p btn-info">Más información</p></a>
+          </div>
 
         <script src="js/scripts.js"></script>
     </body>

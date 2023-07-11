@@ -1,5 +1,5 @@
 /*Fuentes utilizadas*/
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
 /*Estilos de la barra de navegación*/
 
 * {
@@ -48,8 +48,13 @@
     color: #daa322;
 }
 
-.menu{
+.menu, .menu-xs{
     display: none;
+}
+
+.menu-xs i {
+    font-size: 40px;
+    color: #daa322;
 }
 
 .header .btn button,
@@ -96,6 +101,21 @@
     }
     .menu {
         display: inherit;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .menu-xs {
+        display: inherit;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header .logo img {
+        width: 150px;
+        height: fit-content;
     }
 }
 
@@ -218,7 +238,7 @@
 .title h2 {
     font-weight: bold;
     font-size: 35px;
-    width: 600;
+    color: #0b273f;
 }
 
 .promotion {
@@ -234,10 +254,68 @@
 
 .subrayado {
     border: 2px solid #0b273f;
-    width: 50%;
+    width: 70%;
 }
 
 .promotion img{
     max-width: 100%;
     margin-top: 15px;
+}
+
+/*Opiniones de los clientes*/
+.container-opiniones {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 10px auto;
+    text-align: center;
+}
+
+.one, .two, .three, .four, .five {
+    grid-column: 1 / 4;
+    grid-row: auto;
+    padding: 10px;
+}
+
+.item-opiniones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b273f;
+    border-radius: 20px;
+    padding: 15px 20px;
+    transition: 0.7s;
+    flex-wrap: wrap;
+}
+
+.item-opiniones h6, .item-opiniones p {
+    color: white;
+}
+
+.item-opiniones p {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.bi-star-fill {
+    color: #daa322;
+}
+
+/*Info*/
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-p {
+    color: #0b273f;
+    font-weight: bold;
+}
+
+.info .info-btn a{
+    cursor: pointer;
 }

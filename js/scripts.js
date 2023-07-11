@@ -8,11 +8,11 @@ function closeNav() {
 
 
 //Script para el slider
-var slideIndex = 0;
+let slideIndex = 0;
 
 showSlides();
 
-function prevSlide (x) {
+function prev (x) {
     showSlides(slideIndex += x);
 }
 
@@ -21,16 +21,18 @@ function nextSlide (x) {
 }
 
 function showSlides () {
-    var i;
-    var slide = document.getElementsByClassName("slider-item");
+    let i;
+    let slide = document.getElementsByClassName("slider-item");
 
     for (i=0; i<slide.length; i++) {
         slide[i].style.display = "none";
     }
+
     slideIndex++;
     
     if(slideIndex > slide.length) { 
         slideIndex=1;
     }
     slide[slideIndex-1].style.display = "block";
+    setInterval(showSlides(), 1000);
 }
