@@ -8,31 +8,47 @@ function closeNav() {
 
 
 //Script para el slider
-let slideIndex = 0;
+const slider = document.querySelector("#slider");
+let sliderItem = document.querySelectorAll(".slider-item");
+let sliderItemLast = sliderItem[sliderItem.length-1];
 
-showSlides();
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
 
-function prev (x) {
-    showSlides(slideIndex += x);
-}
+slider.insertAdjacentElement('afterbegin', sliderItemLast);
 
-function nextSlide (x) {
-    showSlides(slideIndex += x);
-}
-
-function showSlides () {
-    let i;
-    let slide = document.getElementsByClassName("slider-item");
-
-    for (i=0; i<slide.length; i++) {
-        slide[i].style.display = "none";
-    }
-
-    slideIndex++;
+function Next() {
+    let sliderItemFirst = document.querySelectorAll(".slider-item")[0];
+    slider.style.marginLeft = "-200%";
     
-    if(slideIndex > slide.length) { 
-        slideIndex=1;
-    }
-    slide[slideIndex-1].style.display = "block";
-    setInterval(showSlides(), 1000);
+    slider.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('beforeend', sliderItemFirst);
+        slider.style.marginLeft = "-100%";
+    }, 500);
 }
+
+function Prev() {
+    let sliderItem = document.querySelectorAll(".slider-item");
+    let sliderItemLast = sliderItem[sliderItem.length-1];
+    slider.style.marginLeft = "0";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function() {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin', sliderItemLast);
+        slider.style.marginLeft = "-100%";
+    }, 500);
+}
+
+btnRight.addEventListener('click', function(){
+    Next();
+})
+
+btnLeft.addEventListener('click', function(){
+    Prev();
+})
+
+setInterval(function(){
+    Next();
+}, 3500);
