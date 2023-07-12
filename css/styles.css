@@ -207,7 +207,7 @@
 
 .slider {
     display: flex;
-    width: 400%;
+    width: 300%;
     height: 250px;
     margin-left: -100%;
     justify-content: center;
@@ -225,6 +225,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .slider-img img {
@@ -279,11 +280,62 @@
 .more-info {
     display: grid;
     place-items: center;
-    width: fit-content;
+    width: 100%;
+    background: #fff fixed no-repeat 50% 50%;
+    background-size: cover;
 }
 
-.more-info img {
-    max-width: 100%;
+.more-info p {
+    margin: 20px;
+    text-align: center;
+    color: #0b273f;
+    font-weight: 700
+}
+
+#parallax {
+    background-image: url('../img/palarax.png');
+}
+
+.container-parallax {
+    background-color: #eceff1;
+    display: grid;
+    place-items: center;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.more-info .btn-mas-info button{
+    font-weight: 300;
+    padding: 9px 25px;
+    background: #0b273f;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.more-info a:hover {
+    transform: scale(1.1);
+}
+
+.more-info a {
+    font-size: 700;
+    color: #eceff1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*Video*/
+.testimonio {
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+
+.testimonio-video {
+    height: 250px;
 }
 
 /*Estilos de las promoiones*/
@@ -299,8 +351,10 @@
 }
 
 .promotion {
-    padding: 16px;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .sub {
@@ -375,4 +429,91 @@
 
 .info .info-btn a{
     cursor: pointer;
+}
+
+/*Media querys*/
+@media screen and (min-width: 425px){
+    .container-slider {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 485px){
+    .container-slider {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 625px){
+    .container-slider {
+        width: 350px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .slider-btn i {
+        font-size: 30px;
+    }
+    .header .overlay a{
+        font-size: 30px;
+    }
+    .about-us {
+        padding: 20px;
+     }
+}
+
+@media screen and (min-width: 768px){
+    .container-slider {
+        width: 400px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    .slider-btn i {
+        font-size: 30px;
+    }
+    .left {
+        left: 50px;
+    }
+    .right {
+        right: 50px;
+    }
+    .about-us {
+       padding: 30px;
+    }
+    .subrayado {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .slider-btn i {
+        font-size: 40px;
+    }
+    .left {
+        left: 130px;
+    }
+    .right {
+        right: 130px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .slider-btn {
+        display: none;
+    }
+    .container-slider {
+        margin-top: 100px;
+        overflow: visible;
+    }
+    .about-us p{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .subrayado {
+        width: 40%;
+    }
+    .slider-img {
+        box-shadow: 4px 4px #0b273f;
+    }
 }

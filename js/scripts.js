@@ -49,6 +49,12 @@ btnLeft.addEventListener('click', function(){
     Prev();
 })
 
-setInterval(function(){
+const interval = setInterval(function(){
     Next();
 }, 3500);
+
+var mediaqueryList = window.matchMedia("(min-width: 1440px)");
+
+if (mediaqueryList.matches) {
+    clearInterval(interval);
+}
