@@ -164,6 +164,36 @@
     font-size: 50px;
 }
 
+.overlay-promo {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.overlay-promo .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.overlay-promo .close {
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    font-size: 50px;
+    color: #eceff1;
+}
+
 @media screen and (max-height:450px){
     .header .overlay a{
         font-size: 20px;
@@ -336,6 +366,7 @@
 
 .testimonio-video {
     height: 250px;
+    border-radius: 10px;
 }
 
 /*Estilos de las promoiones*/
@@ -351,10 +382,19 @@
 }
 
 .promotion {
+    width: 90%;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     grid-auto-rows: minmax(100px, auto);
+}
+
+.promotion-img {
+    max-width: 100%;
+    margin-top: 15px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .sub {
@@ -368,9 +408,21 @@
     width: 70%;
 }
 
-.promotion img{
-    max-width: 100%;
-    margin-top: 15px;
+.slider-promos {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.slider-promotion-img {
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 10px;
+    scroll-snap-align: center;
 }
 
 /*Opiniones de los clientes*/

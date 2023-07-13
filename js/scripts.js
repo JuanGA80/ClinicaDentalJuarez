@@ -58,3 +58,19 @@ var mediaqueryList = window.matchMedia("(min-width: 1440px)");
 if (mediaqueryList.matches) {
     clearInterval(interval);
 }
+
+//Scripts para el slider promos
+function openSlider() {
+    document.getElementById("mobile-slider").style.width = "100%";
+}
+
+function closeSlider() {
+    document.getElementById("mobile-slider").style.width = "0%";
+}
+
+const openS = document.querySelector("#slider-promos");
+const closeS = document.querySelector("#slider-close");
+
+closeS.addEventListener('click', function (){
+    closeSlider();
+})
