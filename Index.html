@@ -24,29 +24,29 @@
                 </div>
                 <nav class="navbar">
                     <ul class="nav-links">
-                        <li><a>Promociones</a></li>
-                        <li><a>Opiniones</a></li>
-                        <li><a>Nosotros</a></li>
-                        <li><a href="">Sucursales</a></li>
+                        <li><a href="#Nosotros">Nosotros</a></li>
+                        <li><a href="#Promociones">Promociones</a></li>
+                        <li><a href="#Opiniones">Opiniones</a></li>
+                        <li><a href="#Sucursales">Sucursales</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="btn"><button>Contacto</button></a>
+                <a href="https://wa.me/3221121616" target="_blank" class="btn"><button>Contacto</button></a>
                 <a onclick="openNav()" href="#" class="menu-xs" id="btn-menu"><i class="bi bi-list"></i></a>
                 <a onclick="openNav()" href="#" class="menu" id="btn-menu"><button>Menú</button></a>
                 <div class="overlay" id="mobile-menu">
                     <a onclick="closeNav()" class="close">&times;</a>
                     <div class="overlay-content">
-                        <a>Promociones</a>
-                        <a>Opiniones</a>
-                        <a>Nosotros</a>
-                        <a href="">Sucursales</a>
-                        <a>Contacto</a>
+                        <a href="#Nosotros" onclick="closeNav()">Nosotros</a>
+                        <a href="#Promociones" onclick="closeNav()">Promociones</a>
+                        <a href="#Opiniones" onclick="closeNav()">Opiniones</a>
+                        <a href="#Sucursales" onclick="closeNav()">Sucursales</a>
+                        <a href="https://wa.me/3221121616" target="_blank" onclick="closeNav()">Contacto</a>
                     </div>
                 </div>
         </header>
 
         <!--Seccion hero-->
-        <div class="title"><h2>QUIÉNES SOMOS</h2></div>
+        <div class="title" id="Nosotros"><h2>QUIÉNES SOMOS</h2></div>
         <div class="sub">
             <hr class="subrayado">
         </div>
@@ -86,13 +86,13 @@
                     en todos nuestros servicios. <br>
                     ¡Garantizado!
                 </p>
-                <a href="#" class="btn-mas-info">
+                <a href="https://wa.me/3221121616" target="_blank" class="btn-mas-info">
                     <button>Contáctanos</button>
                 </a>
             </div>
         </div>
         <!--Promociones para celular-->
-        <div class="title"><h2>PROMOCIONES</h2></div>
+        <div class="title" id="Promociones"><h2>PROMOCIONES</h2></div>
         <div class="sub">
             <hr class="subrayado">
         </div>
@@ -143,7 +143,7 @@
             </div>
         </section>
         <!--Opiniones-->
-        <div class="title"><h2>CLIENTES SATISFECHOS</h2></div>
+        <div class="title" id="Opiniones"><h2>CLIENTES SATISFECHOS</h2></div>
         <div class="sub">
             <hr class="subrayado">
         </div>
@@ -194,7 +194,7 @@
             </div>
             <div class="contacto">
                 <p>¿Necesitas una consulta? acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
-                <div>
+                <div class="wa">
                     <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i> 3221121616</a>
                 </div>
             </div>
@@ -202,9 +202,17 @@
                 <h4>Síguenos en Facebook</h4>
                 <a href="https://www.facebook.com/DENTAL.JUAREZ.661/" target="_blank"><i class="bi bi-facebook"></i></a>
             </div>
+            <div class="contacto-desktop">
+                <h4>Contáctanos</h4>
+                <div class="contenido-contacto">
+                    <a href="tel:3221121616"><i class="bi bi-telephone"></i></a>
+                    <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i> 3221121616</a>
+                    <a href="https://www.facebook.com/DENTAL.JUAREZ.661/" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
         </div>
         <!--Sucursales-->
-        <div class="title"><h2>SUCURSALES</h2></div>
+        <div class="title" id="Sucursales"><h2>SUCURSALES</h2></div>
         <div class="sub">
             <hr class="subrayado b">
         </div>

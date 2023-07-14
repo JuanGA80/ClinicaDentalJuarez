@@ -419,7 +419,7 @@
 .slider-promotion-img {
     width: 100%;
     left: 0;
-    position: sticky;
+    position:relative;
     object-fit: cover;
     border-radius: 10px;
     scroll-snap-align: center;
@@ -436,12 +436,6 @@
     text-align: center;
 }
 
-.one, .two, .three, .four, .five {
-    grid-column: 1 / 4;
-    grid-row: auto;
-    padding: 10px;
-}
-
 .item-opiniones {
     display: flex;
     justify-content: space-around;
@@ -450,7 +444,7 @@
     border-radius: 20px;
     padding: 15px 20px;
     transition: 0.7s;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .item-opiniones h6, .item-opiniones p {
@@ -526,6 +520,9 @@
 .fb {
     margin: 5%;
 }
+.contacto-desktop {
+    display: none;
+}
 
 /*Estilos sucursales*/
 .container-sucursales{
@@ -560,6 +557,7 @@
 
 .horario {
     margin-top: 8%;
+    margin-bottom: 5%;
 }
 
 /*Estilos del footer*/
@@ -600,6 +598,17 @@
         width: 300px;
         margin-bottom: 20px;
     }
+    .container-opiniones {
+        width: 250px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 10px auto;
+        text-align: center;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (min-width: 625px){
@@ -643,6 +652,31 @@
     .overlay-promo {
         display: none;
     }
+    .promotion {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .wa {
+        display: none;
+    }
+    .fb {
+        display: none;
+    }
+    .contacto-desktop {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .contacto-desktop h4{
+        color: #0b273f;
+    }
+    .contenido-contacto a{
+        text-decoration: none;
+        color: #0b273f;
+        margin-right: 7px;
+    }
+    .horario {
+        margin-top: 2%;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -654,6 +688,9 @@
     }
     .right {
         right: 130px;
+    }
+    .container-opiniones {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -674,5 +711,8 @@
     }
     .slider-img {
         box-shadow: 4px 4px #0b273f;
+    }
+    .container-opiniones {
+        grid-gap: 80px;
     }
 }
