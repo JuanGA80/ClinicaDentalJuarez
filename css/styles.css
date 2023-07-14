@@ -180,10 +180,10 @@
     display: flex;
     height: 100%;
     flex-direction: column;
-    align-items: center;
     justify-content:center;
     margin-left: 10%;
     margin-right: 10%;
+    width: 14%;
 }
 
 .overlay-promo .close {
@@ -246,6 +246,7 @@
 
 .slider-item {
     width: 100%;
+    max-height: 100%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -332,6 +333,7 @@
     place-items: center;
     margin: 30px;
     border-radius: 10px;
+    padding: 15px;
 }
 
 .more-info .btn-mas-info button{
@@ -386,7 +388,8 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
     grid-auto-rows: minmax(100px, auto);
 }
 
@@ -395,6 +398,7 @@
     margin-top: 15px;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .sub {
@@ -409,7 +413,7 @@
 }
 
 .slider-promos {
-    width: fit-content;
+    width: 600%;
     position: relative;
     display: flex;
     overflow: scroll;
@@ -422,7 +426,26 @@
     position:relative;
     object-fit: cover;
     border-radius: 10px;
-    scroll-snap-align: center;
+    padding: 10px;
+    display: block;
+}
+
+.slider-btn-p {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+}
+
+.bLeft {
+    left: 8%;
+}
+
+.bRight {
+    right: 1%;
 }
 
 /*Opiniones de los clientes*/
@@ -483,21 +506,40 @@
     margin-top: 5%;
 }
 
+.consulta-desk {
+    display: none;
+}
+
 .contacto {
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contacto p{
-    text-align: justify;
-    font-size: 20px;
+    color: #0b273f;
+    text-align: center;
+    font-size: 22px;
     margin-bottom: 5%;
+    font-weight: 600;
 }
 
 .contacto a{
     text-decoration: none;
-    color: #0b273f;
+    color: #e2f1f8;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.wa {
+    text-align: center;
+    background-color: #0b273f;
+    border-radius: 5pc;
+    width: max-content;
+    padding: 14px;
 }
 
 .bi-whatsapp {
@@ -529,9 +571,11 @@
     display: grid;
     flex-direction: column;
     margin: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+    grid-auto-rows: minmax(80px, auto);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .container-sucursales a {
@@ -551,13 +595,18 @@
     text-align: center;
 }
 
+.direccion p {
+    font-size: 15px;
+}
+
 .b {
     margin-bottom: 5%;
 }
 
 .horario {
-    margin-top: 8%;
     margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /*Estilos del footer*/
@@ -631,7 +680,7 @@
 @media screen and (min-width: 768px){
     .container-slider {
         width: 400px;
-        height: 350px;
+        height: 390px;
         margin-bottom: 20px;
     }
     .slider-btn i {
@@ -655,14 +704,15 @@
     .promotion {
         grid-template-columns: repeat(3, 1fr);
     }
-    .wa {
-        display: none;
+    .contacto {
+        padding-bottom: 3%;
+        margin-top: 20px;
     }
     .fb {
         display: none;
     }
     .contacto-desktop {
-        display: flex;
+        display: none;
         flex-direction: column;
         margin-left: 5%;
     }
@@ -676,6 +726,15 @@
     }
     .horario {
         margin-top: 2%;
+    }
+    .direccion p {
+        font-size: 18px;
+    }
+    .container-sucursales {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #Opiniones {
+        margin-top: 20px;
     }
 }
 
@@ -692,6 +751,67 @@
     .container-opiniones {
         grid-template-columns: repeat(4, 1fr);
     }
+    .sub-sucursal {
+        margin-bottom: -30px;
+    }
+    .icons-rs {
+        justify-content: center;
+    }
+    .icons-rs a {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .container-slider {
+        overflow: visible;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 350px;
+        height: 350px;
+    }
+    .slider-img{ 
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+    }
+    .slider-btn {
+        display: none;
+    }
+    .title-des {
+        margin-top: 30px;
+    }
+    .about-us p{
+        margin-right: 20%;
+        margin-left: 20%;
+        font-size: 22px;
+    }
+    .more-info {
+        height: 400px;
+    }
+    .contacto {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    .contacto-desk .title-con{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .consulta-desk {
+        display: flex;
+    }
+    .consulta-movil {
+        display: none;
+    }
+    #Promociones {
+        margin-top: 25px;
+    }
+    #Opiniones {
+        margin-top: 25px;
+    }
+    .promotion {
+        grid-row-gap: 20px;
+        grid-column-gap: 40px;
+    }
+    #sub {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 1440px){
@@ -701,10 +821,6 @@
     .container-slider {
         margin-top: 100px;
         overflow: visible;
-    }
-    .about-us p{
-        margin-right: 20%;
-        margin-left: 20%;
     }
     .subrayado {
         width: 40%;

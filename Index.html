@@ -46,7 +46,7 @@
         </header>
 
         <!--Seccion hero-->
-        <div class="title" id="Nosotros"><h2>QUIÉNES SOMOS</h2></div>
+        <div class="title title-des" id="Nosotros"><h2>QUIÉNES SOMOS</h2></div>
         <div class="sub">
             <hr class="subrayado">
         </div>
@@ -93,7 +93,7 @@
         </div>
         <!--Promociones para celular-->
         <div class="title" id="Promociones"><h2>PROMOCIONES</h2></div>
-        <div class="sub">
+        <div class="sub" id="sub">
             <hr class="subrayado">
         </div>
         <section class="promotion">
@@ -130,8 +130,8 @@
             <!--Slider con todas las promos para celular-->
             <div class="overlay-promo" id="mobile-slider">
                 <a id="slider-close" class="close">&times;</a>
-                <div class="overlay-content">
-                    <div class="slider-promos">
+                <div class="overlay-content container-promos">
+                    <div class="slider-promos" id="slider-promos">
                         <img src="img/imagen_slider_nuevo.jpeg" alt="" class="slider-promotion-img">
                         <img src="img/consulta_gratis.jpg" alt="" class="slider-promotion-img">
                         <img src="img/juarez-agosto.jpeg" alt="" class="slider-promotion-img">
@@ -139,11 +139,13 @@
                         <img src="img/juarez_julio_uno.jpg" alt="" class="slider-promotion-img">
                         <img src="img/juarez-agosto.jpeg" alt="" class="slider-promotion-img">
                     </div>
+                    <div class="slider-btn-p bLeft" id="btn-promoLeft"><i class="bi bi-caret-left-fill"></i></div>
+                    <div class="slider-btn-p bRight" id="btn-promoRight"><i class="bi bi-caret-right-fill"></i></div>
                 </div>
             </div>
         </section>
         <!--Opiniones-->
-        <div class="title" id="Opiniones"><h2>CLIENTES SATISFECHOS</h2></div>
+        <div class="title title-des" id="Opiniones"><h2>CLIENTES SATISFECHOS</h2></div>
         <div class="sub">
             <hr class="subrayado">
         </div>
@@ -187,20 +189,18 @@
             </div>
         </div>
         <!--Contactanos-->
-        <div class="container-contacto">
+        <div class="container-contacto title-des">
             <div class="title"><h2>CONTACTO</h2></div>
             <div class="sub">
                 <hr class="subrayado">
             </div>
-            <div class="contacto">
-                <p>¿Necesitas una consulta? acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
+            <div class="contacto contacto-desk">
+                <p class="consulta-movil">¿Necesitas una consulta? Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
+                <p class="consulta-desk title-con">¿Necesitas una consulta?</p>
+                <p class="consulta-desk"> Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
                 <div class="wa">
                     <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i> 3221121616</a>
                 </div>
-            </div>
-            <div class="fb">
-                <h4>Síguenos en Facebook</h4>
-                <a href="https://www.facebook.com/DENTAL.JUAREZ.661/" target="_blank"><i class="bi bi-facebook"></i></a>
             </div>
             <div class="contacto-desktop">
                 <h4>Contáctanos</h4>
@@ -212,15 +212,21 @@
             </div>
         </div>
         <!--Sucursales-->
-        <div class="title" id="Sucursales"><h2>SUCURSALES</h2></div>
-        <div class="sub">
+        <div class="title title-des" id="Sucursales"><h2>SUCURSALES</h2></div>
+        <div class="sub  sub-sucursal">
             <hr class="subrayado b">
         </div>
         <div class="container-sucursales">
+            <a href="https://goo.gl/maps/Y4M66N23Vw1YM2VQ6">
+                <div class="direccion">
+                    <h3>MARINA</h3>
+                    <p>Plaza Neptuno, Blvd. Francisco Medina Ascencio Local 19-A-1, Marina Vallarta, Puerto Vallarta</p>
+                </div>
+            </a>
             <a href="https://goo.gl/maps/TxLUKv73uqAp82Gb9" target="_blank">
                 <div class="direccion">
                     <h3>JUÁREZ</h3>
-                    <p>Juárez 661, Centro, Pto Vallarta, Jalisco</p>
+                    <p>Juárez 661, Centro, 48300, Pto Vallarta, Jalisco</p>
                 </div>
             </a>
             <a href="https://goo.gl/maps/Wk5SyGrrxaBpZYTr6">
