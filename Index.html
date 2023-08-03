@@ -15,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <!--Iconos-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    </head>
+      </head>
     <body>
         <!--Barra de navegación-->
         <header class="header">
@@ -44,7 +44,12 @@
                     </div>
                 </div>
         </header>
-
+        <!--pop up promociones --------------------------------------------------->
+        <div class="popup" id="modal">
+          <i id="closePop" class="bi bi-x-lg"></i>
+          <h1 class="h1">Aprovecha nuestra promoción de coronas libres de metal</h1>
+          <img class="img" src="img/promociones/promo-coronas.jpg" alt="">
+        </div>
         <!--Seccion hero-->
         <div class="title title-des" id="Nosotros"><h2>QUIÉNES SOMOS</h2></div>
         <div class="sub">
@@ -97,6 +102,11 @@
             <hr class="subrayado">
         </div>
         <section class="promotion">
+          <div class="promotion-item">
+            <a onclick="openSlider()">
+                <img src="img/promociones/promo-coronas.jpg" alt="" class="promotion-img">
+            </a>
+          </div>
             <div class="promotion-item">
                 <a onclick="openSlider()">
                     <img src="img/imagen_slider_nuevo.jpeg" alt="" class="promotion-img">
@@ -105,11 +115,6 @@
             <div class="promotion-item">
                 <a onclick="openSlider()">
                     <img src="img/consulta_gratis.jpg" alt="" class="promotion-img">
-                </a>
-            </div>
-            <div class="promotion-item">
-                <a onclick="openSlider()">
-                    <img src="img/juarez-agosto.jpeg" alt="" class="promotion-img">
                 </a>
             </div>
             <div class="promotion-item">
@@ -132,12 +137,12 @@
                 <a id="slider-close" class="close">&times;</a>
                 <div class="overlay-content container-promos">
                     <div class="slider-promos" id="slider-promos">
-                        <img src="img/imagen_slider_nuevo.jpeg" alt="" class="slider-promotion-img">
-                        <img src="img/consulta_gratis.jpg" alt="" class="slider-promotion-img">
-                        <img src="img/juarez-agosto.jpeg" alt="" class="slider-promotion-img">
-                        <img src="img/juarez_blanqueamiento.png" alt="" class="slider-promotion-img">
-                        <img src="img/juarez_julio_uno.jpg" alt="" class="slider-promotion-img">
-                        <img src="img/juarez-agosto.jpeg" alt="" class="slider-promotion-img">
+                      <img src="img/promociones/promo-coronas.jpg" alt="" class="slider-promotion-img">
+                      <img src="img/imagen_slider_nuevo.jpeg" alt="" class="slider-promotion-img">
+                      <img src="img/consulta_gratis.jpg" alt="" class="slider-promotion-img">
+                      <img src="img/juarez_blanqueamiento.png" alt="" class="slider-promotion-img">
+                      <img src="img/juarez_julio_uno.jpg" alt="" class="slider-promotion-img">
+                      <img src="img/juarez-agosto.jpeg" alt="" class="slider-promotion-img">
                     </div>
                     <div class="slider-btn-p bLeft" id="btn-promoLeft"><i class="bi bi-caret-left-fill"></i></div>
                     <div class="slider-btn-p bRight" id="btn-promoRight"><i class="bi bi-caret-right-fill"></i></div>

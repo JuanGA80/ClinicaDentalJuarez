@@ -130,3 +130,14 @@ btnRightPro.addEventListener('click', function(){
 btnLeftPro.addEventListener('click', function(){
     PrevPro();
 })
+//PopUp codigo
+const cerrar = document.getElementById("closePop");
+const modal = document.getElementById("modal");
+
+setTimeout(function () {
+  modal.classList.add("abrir");
+}, 3000);
+
+cerrar.addEventListener('click', function(){
+  modal.classList.remove("abrir");
+});

@@ -231,14 +231,14 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    margin-top: 20px;
-    width: 200px;
+    margin: 20px 15px 40px 15px;
+    width: 250px;
 }
 
 .slider {
     display: flex;
     width: 300%;
-    height: 250px;
+    height: 100%;
     margin-left: -100%;
     justify-content: center;
     align-items: center;
@@ -634,10 +634,54 @@
     align-items: center;
     margin: auto;
 }
+.popup {
+	background-color: rgba(0, 0, 0, 0.95);
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	color: white;
+	transform: scale(0);
+	transition: 1s;
+}
+.abrir {
+  transition: 1s;
+  transform: scale(1);
+}
+.popup .img {
+	width: 350px;
+	border-radius: 5px;
+	margin: 50px 0 0 0;
+}
+.popup .h1 {
+	font-size: 30px;
+	text-align: center;
+	padding: 0 20px 0 20px;
+}
+.popup .bi-x-lg {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 30px;
+}
+@keyframes popup {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
 /*Media querys*/
 @media screen and (min-width: 425px){
     .container-slider {
-        width: 250px;
+        width: 300px;
         margin-bottom: 20px;
     }
 }
@@ -661,11 +705,11 @@
 }
 
 @media screen and (min-width: 625px){
-    .container-slider {
-        width: 350px;
-        height: 300px;
-        margin-bottom: 20px;
-    }
+  .container-slider {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
     .slider-btn i {
         font-size: 30px;
     }
@@ -674,14 +718,14 @@
     }
     .about-us {
         padding: 20px;
-     }
+    }
 }
 
 @media screen and (min-width: 768px){
     .container-slider {
         width: 400px;
         height: 390px;
-        margin-bottom: 20px;
+        margin: 20px 60px 40px 60px;;
     }
     .slider-btn i {
         font-size: 30px;
@@ -693,7 +737,7 @@
         right: 50px;
     }
     .about-us {
-       padding: 30px;
+      padding: 30px;
     }
     .subrayado {
         width: 50%;
@@ -737,7 +781,22 @@
         margin-top: 20px;
     }
 }
-
+@media (max-width:798px) {
+	.popup .h1 {
+		font-size: 20px;
+	}
+	.popup .img {
+		width: 300px;
+	}
+}
+@media (max-width:425px) {
+	.popup .h1 {
+		font-size: 15px;
+	}
+	.popup .img {
+		width: 250px;
+	}
+}
 @media screen and (min-width: 1024px){
     .slider-btn i {
         font-size: 40px;
