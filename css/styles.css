@@ -183,7 +183,6 @@
     justify-content:center;
     margin-left: 10%;
     margin-right: 10%;
-    width: 14%;
 }
 
 .overlay-promo .close {
@@ -413,11 +412,12 @@
 }
 
 .slider-promos {
-    width: 600%;
-    position: relative;
+    width: 100%;
+    padding: 0 20px;
     display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
+}
+.slider-promos img {
+    width: 100%;
 }
 
 .slider-promotion-img {

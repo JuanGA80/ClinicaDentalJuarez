@@ -3,7 +3,7 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("mobile-menu").style.width = "0%";
+  document.getElementById("mobile-menu").style.width = "0%";
 }
 
 
@@ -18,68 +18,80 @@ const btnRight = document.querySelector("#btn-right");
 slider.insertAdjacentElement('afterbegin', sliderItemLast);
 
 function Next() {
-    let sliderItemFirst = document.querySelectorAll(".slider-item")[0];
-    slider.style.marginLeft = "-200%";
-    
-    slider.style.transition = "all 0.5s";
-    setTimeout(function() {
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('beforeend', sliderItemFirst);
-        slider.style.marginLeft = "-100%";
-    }, 500);
+  let sliderItemFirst = document.querySelectorAll(".slider-item")[0];
+  slider.style.marginLeft = "-200%";
+
+  slider.style.transition = "all 0.5s";
+  setTimeout(function() {
+    slider.style.transition = "none";
+    slider.insertAdjacentElement('beforeend', sliderItemFirst);
+    slider.style.marginLeft = "-100%";
+  }, 500);
 }
 
 function Prev() {
-    let sliderItem = document.querySelectorAll(".slider-item");
-    let sliderItemLast = sliderItem[sliderItem.length-1];
-    slider.style.marginLeft = "0";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function() {
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('afterbegin', sliderItemLast);
-        slider.style.marginLeft = "-100%";
-    }, 500);
+  let sliderItem = document.querySelectorAll(".slider-item");
+  let sliderItemLast = sliderItem[sliderItem.length-1];
+  slider.style.marginLeft = "0";
+  slider.style.transition = "all 0.5s";
+  setTimeout(function() {
+    slider.style.transition = "none";
+    slider.insertAdjacentElement('afterbegin', sliderItemLast);
+    slider.style.marginLeft = "-100%";
+  }, 500);
 }
 
 btnRight.addEventListener('click', function(){
-    Next();
+  Next();
 })
 
 btnLeft.addEventListener('click', function(){
-    Prev();
+  Prev();
 })
 
 const interval = setInterval(function(){
-    Next();
+  Next();
 }, 3500);
 
 var mediaqueryList = window.matchMedia("(min-width: 1024px)");
 
 if (mediaqueryList.matches) {
-    clearInterval(interval);
-    function NextT() {
-        let sliderItemFirst = document.querySelectorAll(".slider-item")[0];
-        slider.style.marginLeft = "-200%";
+  clearInterval(interval);
+  function NextT() {
+    let sliderItemFirst = document.querySelectorAll(".slider-item")[0];
+    slider.style.marginLeft = "-200%";
         
-        slider.style.transition = "all 3s";
-        setTimeout(function() {
-            slider.style.transition = "all 1s";
-            slider.insertAdjacentElement('beforeend', sliderItemFirst);
-            slider.style.marginLeft = "-100%";
-        }, 100);
-    }
-    setInterval(function(){
-        NextT();
-    }, 3000);
+    slider.style.transition = "all 3s";
+    setTimeout(function() {
+      slider.style.transition = "all 1s";
+      slider.insertAdjacentElement('beforeend', sliderItemFirst);
+      slider.style.marginLeft = "-100%";
+    }, 100);
+  }
+  setInterval(function(){
+    NextT();
+  }, 3000);
 }
 
+let img = ["img/promociones/promo-coronas.jpeg", 
+          "img/promociones/blanqueamiento-cuadrado-juarez.jpg", 
+          "img/promociones/brackets-cuadrado-juarez.jpg", 
+          "img/promociones/muelas-cuadrado-juarez.jpg",
+          "img/promociones/promo-junio-2-23.jpg",
+          "img/promociones/limpieza-multiservice-cuadrado-dental-juarez.jpg"];
+
 //Scripts para el slider promos
-function openSlider() {
+function openSlider(id) {
     document.getElementById("mobile-slider").style.width = "100%";
+    let promo = document.getElementById("slider-promos");
+    promo.innerHTML += `
+        <img src=${img[id]} alt="" id="imgService">`;
 }
 
 function closeSlider() {
     document.getElementById("mobile-slider").style.width = "0%";
+    let promo = document.getElementById("slider-promos");
+    promo.innerHTML = "";
 }
 
 const openS = document.querySelector("#slider-promos");
