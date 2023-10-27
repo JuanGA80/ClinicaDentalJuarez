@@ -77,7 +77,7 @@ let img = ["img/promociones/promo-coronas.jpeg",
           "img/promociones/blanqueamiento-cuadrado-juarez.jpg", 
           "img/promociones/brackets-cuadrado-juarez.jpg", 
           "img/promociones/muelas-cuadrado-juarez.jpg",
-          "img/promociones/promo-junio-2-23.jpg",
+          "img/promociones/placas-cuadrado-juarez.jpg",
           "img/promociones/limpieza-multiservice-cuadrado-dental-juarez.jpg"];
 
 //Scripts para el slider promos
