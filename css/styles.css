@@ -665,7 +665,7 @@ small {
   transform: scale(1);
 }
 .popup .img {
-	width: 350px;
+	width: 600px;
 	border-radius: 5px;
 	margin: 50px 0 0 0;
 }
@@ -800,15 +800,15 @@ small {
 		font-size: 20px;
 	}
 	.popup .img {
-		width: 300px;
+		width: 450px;
 	}
 }
-@media (max-width:425px) {
+@media (max-width:440px) {
 	.popup .h1 {
 		font-size: 15px;
 	}
 	.popup .img {
-		width: 250px;
+		width: 300px;
 	}
 }
 @media screen and (min-width: 1024px){
