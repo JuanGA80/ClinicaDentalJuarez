@@ -1,9 +1,15 @@
 //PopUp codigo
 const cerrar = document.getElementById("closePop");
 const modal = document.getElementById("modal");
-setTimeout(function () {
+const ver = document.getElementById("ver-mas");
+const info = document.getElementById("mas-info")
+
+ver.addEventListener('click', function () {
+  info.classList.toggle('ver')
+})
+/*setTimeout(function () {
   modal.classList.add("abrir");
-}, 2000);
+}, 2000);*/
 
 cerrar.addEventListener('click', function(){
   modal.classList.remove("abrir");
@@ -19,50 +25,38 @@ function closeNav() {
 
 
 //Script para el slider
-const slider = document.querySelector("#slider");
-let sliderItem = document.querySelectorAll(".slider-item");
-let sliderItemLast = sliderItem[sliderItem.length-1];
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-const btnLeft = document.querySelector("#btn-left");
-const btnRight = document.querySelector("#btn-right");
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-slider.insertAdjacentElement('afterbegin', sliderItemLast);
-
-function Next() {
-  let sliderItemFirst = document.querySelectorAll(".slider-item")[0];
-  slider.style.marginLeft = "-200%";
-
-  slider.style.transition = "all 0.5s";
-  setTimeout(function() {
-    slider.style.transition = "none";
-    slider.insertAdjacentElement('beforeend', sliderItemFirst);
-    slider.style.marginLeft = "-100%";
-  }, 500);
-}
-
-function Prev() {
-  let sliderItem = document.querySelectorAll(".slider-item");
-  let sliderItemLast = sliderItem[sliderItem.length-1];
-  slider.style.marginLeft = "0";
-  slider.style.transition = "all 0.5s";
-  setTimeout(function() {
-    slider.style.transition = "none";
-    slider.insertAdjacentElement('afterbegin', sliderItemLast);
-    slider.style.marginLeft = "-100%";
-  }, 500);
-}
-
-btnRight.addEventListener('click', function(){
-  Next();
-})
-
-btnLeft.addEventListener('click', function(){
-  Prev();
-})
-
-const interval = setInterval(function(){
-  Next();
-}, 3500);
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  //breakpoints
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
 
 var mediaqueryList = window.matchMedia("(min-width: 1024px)");
 

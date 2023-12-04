@@ -13,10 +13,15 @@
         <link rel="icon" type="image/x-icon" href="img/favicon.png">
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
         <!--Iconos-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFY9DYY8KK"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -76,34 +81,53 @@
           <h1 class="h1">Aprovecha nuestra promoción de cirugía de muelas del juicio</h1>
           <img class="img" src="img/promociones/muelas-promo-juarez.jpg" alt="">
         </div>
-        <!--Seccion hero-->
-        <div class="title title-des" id="Nosotros"><h2>QUIÉNES SOMOS</h2></div>
-        <div class="sub">
-            <hr class="subrayado">
+        <!--Inicio Botones flotantes-->
+        <div class="botones-flotantes">
+          <a href="https://wa.me/3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+          <a href="tel:3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone"></i></a>
         </div>
+        <!--Fin botones flotantes-->
+        <!--Seccion hero-->
         <section class="hero">
-            <div class="slider-btn left" id="btn-left"><i class="bi bi-arrow-left-circle-fill"></i></div>
-                <div class="container-slider">
-                    <div class="slider" id="slider">
-                        <div class="slider-item">
-                            <img src="img/slider1.png" alt="" class="slider-img">
-                        </div>
-                        <div class="slider-item">
-                            <img src="img/slider2.png" alt="" class="slider-img">
-                        </div>
-                        <div class="slider-item">
-                            <img src="img/slider3.png" alt="" class="slider-img">
-                        </div>
-                    </div>
-                </div>
-            <div class="slider-btn right" id="btn-right"><i class="bi bi-arrow-right-circle-fill"></i></div>
+            <div class="info">
+              <h2>Bienvenidos a clínica Dental Juárez</h2>
+              <h1>Tu salud bucal es nuestra prioridad</h1>
+              <div class="botones-contacto">
+                <a href="https://wa.me/3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Contáctanos</a>
+                <a href="tel:3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone"></i> Llamada</a>
+              </div>
+            </div>
+            <div class="video">
+              <video src="video/video-hero.mp4" muted loop autoplay></video>
+            </div>
         </section>
 
-        <section class="about-us">
+        <section class="about-us desktop">
             <p>
-                Somos una Clínica Dental con más de 20 años de experiencia, dedicados a la preservación de tu salud dental, contamos con personal altamente capacitado para realizar todas las especialidades ondontológicas.  
+              Con más de 20 años de experiencia, somos una Clínica Dental comprometida con la preservación de tu salud dental. 
+              Nuestro equipo altamente capacitado ofrece una amplia gama de especialidades odontológicas, respaldadas por tecnología de 
+              vanguardia. <br> <br>
+              Además de nuestras especialidades odontológicas, también nos enfocamos en la educación preventiva. 
+              Creemos que la clave para una salud bucal óptima es la combinación de tratamientos expertos y prácticas de 
+              autocuidado informadas. Nuestro personal está dedicado a proporcionar información y orientación personalizada 
+              para ayudarte a mantener una sonrisa saludable de por vida
             </p>
         </section>
+        <section class="about-us movil">
+          <p>
+            Con más de 20 años de experiencia, somos una Clínica Dental comprometida con la preservación de tu salud dental. 
+            Nuestro equipo altamente capacitado ofrece una amplia gama de especialidades odontológicas, respaldadas por tecnología de 
+            vanguardia.
+          </p>
+          <a id="ver-mas">Ver más</a>
+          <div class="mas-info" id="mas-info">
+            <p>Además de nuestras especialidades odontológicas, también nos enfocamos en la educación preventiva. 
+              Creemos que la clave para una salud bucal óptima es la combinación de tratamientos expertos y prácticas de 
+              autocuidado informadas. Nuestro personal está dedicado a proporcionar información y orientación personalizada 
+              para ayudarte a mantener una sonrisa saludable de por vida</p>
+              <img src="img/promociones/blanqueamiento-cuadrado-juarez.jpg" alt="">
+          </div>
+      </section>
         <!--Video testimonio
         <div class="clinica">
             <img src="img/palarax.png" alt="foto del consultorio" class="clinica-img">
@@ -131,6 +155,16 @@
             <hr class="subrayado">
         </div>
         <section class="promotion">
+          <div class="promotion-item"> 
+            <a href="https://wa.me/3221121616" target="_blank">
+                <img src="img/promociones/coronaurg-cuadrado-juarez.jpg" alt="" class="promotion-img">
+            </a>
+          </div>
+          <div class="promotion-item"> 
+            <a href="https://wa.me/3221121616" target="_blank">
+                <img src="img/promociones/corona-cuadrado-juarez.jpg" alt="" class="promotion-img">
+            </a>
+          </div>
             <div class="promotion-item">
                 <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción para cirugía de terceros molares" target="_blank">
                     <img src="img/promociones/muelas-cuadrado-juarez.jpg" alt="" class="promotion-img">
@@ -173,7 +207,10 @@
             </div>
         </section>
         <!--Opiniones-->
-        <div class="title title-des" id="Opiniones"><h2>CLIENTES SATISFECHOS</h2></div>
+        <div class="title title-des" id="Opiniones">
+          <h2>TESTIMONIOS</h2>
+          <small>Da click para reproducir el video</small>
+        </div>
         <div class="sub">
             <hr class="subrayado">
         </div>
@@ -216,6 +253,129 @@
                     <i class="bi bi-star-fill"></i></span>
             </div>
         </div>
+        <!--Opiniones-->
+        <div class="title title-des" id="Resenas">
+          <h2>RESEÑAS</h2>
+        </div>
+        <div class="sub">
+            <hr class="subrayado">
+        </div>
+        <section class="resenas">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="item-resena">
+                  <div>
+                    <img src="img/clientes/cliente1.png" alt="">
+                    <h4>Ursula Muñoz Manrique</h4>
+                  </div>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Excelente servicio, amabilidad y eficacia en su trabajo, cumplen a tiempo y son muy accesibles los doctores.
+                    Lleve a mis primos de Estados Unidos y quedaron también muy contentos con el trato de primera y los precios.
+                    Gracias a todas las Clínicas Dental Juárez.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-resena">
+                  <div>
+                    <img src="img/clientes/cliente2.png" alt="">
+                    <h4>Paulina Torres</h4>
+                  </div>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Excelente servicio, tratamientos sin dolor...
+                    El Dr Alan es experto en carillas de resina.
+                    SUPER RECOMENDADOS✨️</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-resena">
+                  <div>
+                    <img src="img/clientes/cliente3.png" alt="">
+                    <h4>Alan Ramirez</h4>
+                  </div>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Excelente servicio!
+                    Los mejores de la zona</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-resena">
+                  <div>
+                    <img src="img/clientes/cliente4.png" alt="">
+                    <h4>anni Talavera2012</h4>
+                  </div>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Excelente servicio en poco tiempo mi tratamiento de ortodoncia me a cambiado mi sonrisa 😃 muy amable la doctora 
+                    muy recomendable ☺️⭐⭐⭐⭐ 👌</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-resena">
+                  <div>
+                    <img src="img/clientes/cliente5.png" alt="">
+                    <h4>perla rivera flores</h4>
+                  </div>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Excelente servicio y muy amable doctora, realmente recomiendo que asistan a ese lugar☺️</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-resena">
+                  <div>
+                    <img src="img/clientes/cliente6.png" alt="">
+                    <h4>Gabriel Peña Gonzalez</h4>
+                  </div>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>Excelente Clínica Dental, con la mejor atención y trato que hay, super recomendable!!</p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>            
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </section>
         <!--Contactanos-->
         <div class="container-contacto title-des">
             <div class="title"><h2>CONTACTO</h2></div>
