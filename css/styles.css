@@ -437,7 +437,7 @@
 .testimonio {
     display: grid;
     place-items: center;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .testimonio-video {
@@ -647,7 +647,7 @@ small {
     border-radius: 20px;
     padding: 15px 20px;
     transition: 0.7s;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .item-opiniones h6, .item-opiniones p {
@@ -872,7 +872,6 @@ small {
         margin-bottom: 20px;
     }
     .container-opiniones {
-        width: 250px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
@@ -1042,7 +1041,12 @@ small {
         right: 130px;
     }
     .container-opiniones {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);  
+        place-items: center;
+        width: 400px;
+    }
+    .item-opiniones {
+        width: 350px;
     }
     .sub-sucursal {
         margin-bottom: -30px;
