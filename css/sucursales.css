@@ -1,0 +1,25 @@
+.swiper{
+  width: 70% !important;
+}
+.swiper img{
+  width: 100% !important;
+}
+.swiper_thumbnail .swiper-slide{
+  cursor: pointer !important;
+}
+.swiper_thumbnail .swiper-slide-thumb-active{
+  outline: 2px solid #000 !important;
+  outline-offset: -2px !important;
+  height: max-content !important;
+}
+.swiper_thumbnail img{
+  vertical-align: bottom !important;
+}
+.modal-1 {
+  margin-top: 200px;
+  z-index: 99;
+}
+.modal-1 i {
+  top: 0 !important;
+  right: -850px !important;
+}
