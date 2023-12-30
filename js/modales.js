@@ -6,44 +6,34 @@ function closeNav() {
   document.getElementById("mobile-menu").style.width = "0%";
 }
 
-const swiper_thumbnail = new Swiper(".swiper_thumbnail", {
-  slidesPerView: 3,
-})
-const swiper = new Swiper('.swiper_main', {
-  loop: true,                         
-  autoplay: {                         
-      delay: 2000,  
-  },                   
-  navigation: {                       
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: swiper_thumbnail,
-  },
-})
-
 const containerModal = document.getElementById('containerFotos')
 const slider1 = document.getElementById('slider1')
-const slider2 = document.getElementById('slider2')
 
-function closeModal () {
+function closeModalSlider () {
   containerModal.classList.remove('show-modal')
   setTimeout(() => {
       containerModal.style.display = 'none'
-    }, 500);
+      slider1.innerHTML = ''
+    }, 400);
 }
-function showPhotos (option) {
+function showPhotos (option, number, sucursal) {
   switch (option) {
     case 1: 
-    for (i=1; i<15; i++) {
-      slider1.innerHTML = `
-      <div class="swiper-slide"><img src="img/Sucursales/Pitillal/${i}.jpg"></div>
-      `
-      slider2.innerHTML = `
-      <div class="swiper-slide"><img src="img/Sucursales/Pitillal/${i}.jpg"></div>
-      `
+    for (i=1; i<number; i++) {
+      const sHTML = `<div class="swiper-slide"><img src="img/Sucursales/${sucursal}/${i}.jpg"></div>`
+      slider1.insertAdjacentHTML("afterbegin", sHTML)
+      console.log(i)
     }
+    const swiper = new Swiper('.swiper_main', {
+      loop: true,                         
+      autoplay: {                         
+          delay: 2000,  
+      },                   
+      navigation: {                       
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+    })
     containerModal.style.display = 'flex'
       setTimeout(() => {
         containerModal.classList.add('show-modal')

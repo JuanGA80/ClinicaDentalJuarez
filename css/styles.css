@@ -1180,6 +1180,21 @@ small {
 	.popup .img {
 		width: 450px;
 	}
+  .hero-sucursales {
+    padding: 60px 1rem;
+  }
+  .hero-sucursales .contenido {
+    padding: 50px 1rem;
+  }
+  .container-sucursal {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card .btn-card a {
+    font-size: 13px;
+  }
+  .container-modal {
+    padding: 0 1rem;
+  }
 }
 @media (max-width:440px) {
 	.popup .h1 {

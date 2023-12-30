@@ -113,7 +113,7 @@
         </div>
         <div class="btn-card">
           <a href="https://goo.gl/maps/TxLUKv73uqAp82Gb9" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
-          <a href="#" onclick="return false" rel="noopener noreferrer">Ver fotos</a>
+          <a onclick="showPhotos(1, 13, 'Centro')" rel="noopener noreferrer">Ver fotos</a>
         </div>
       </div>
       <div class="card">
@@ -127,7 +127,7 @@
         </div>
         <div class="btn-card">
           <a href="https://goo.gl/maps/Wk5SyGrrxaBpZYTr6" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
-          <a onclick="showPhotos(1)" rel="noopener noreferrer">Ver fotos</a>
+          <a onclick="showPhotos(1, 15, 'Pitillal')" rel="noopener noreferrer">Ver fotos</a>
         </div>
       </div>
       <div class="card">
@@ -141,7 +141,7 @@
         </div>
         <div class="btn-card">
           <a href="https://goo.gl/maps/UtdqjwwJpg3wSzun8" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
-          <a href="#" onclick="return false" rel="noopener noreferrer">Ver fotos</a>
+          <a onclick="showPhotos(1, 15, 'Juntas')" rel="noopener noreferrer">Ver fotos</a>
         </div>
       </div>
       <div class="card">
@@ -155,7 +155,7 @@
         </div>
         <div class="btn-card">
           <a href="https://goo.gl/maps/Q9vvr6hyrXEzdUq8A" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
-          <a href="#" onclick="return false" rel="noopener noreferrer">Ver fotos</a>
+          <a onclick="showPhotos(1, 17, 'Basilio')" rel="noopener noreferrer">Ver fotos</a>
         </div>
       </div>
       <div class="card">
@@ -169,7 +169,7 @@
         </div>
         <div class="btn-card">
           <a href="https://goo.gl/maps/g79KiipmFz31Xpoh9" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
-          <a href="#" onclick="return false" rel="noopener noreferrer">Ver fotos</a>
+          <a onclick="showPhotos(1, 15,'Mezcales')" rel="noopener noreferrer">Ver fotos</a>
         </div>
       </div>
       <div class="card">
@@ -183,7 +183,7 @@
         </div>
         <div class="btn-card">
           <a href="https://goo.gl/maps/pzWdF7mBcACbrGs98" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
-          <a href="#" onclick="return false" rel="noopener noreferrer">Ver fotos</a>
+          <a onclick="showPhotos(1, 13, 'Jose')" rel="noopener noreferrer">Ver fotos</a>
         </div>
       </div>
     </section>
@@ -198,18 +198,13 @@
     </div>
     <div class="container-modal" id="containerFotos">
       <div class="modal-1">
-        <i class="bi bi-x-lg" onclick="closeModal()"></i>
+        <i class="bi bi-x-lg" onclick="closeModalSlider()"></i>
         <div class="swiper swiper_main">
           <div class="swiper-wrapper" id="slider1">
             <!--<div class="swiper-slide"><img src="img/Sucursales/basilio.jpg"></div>-->
           </div>
           <div class="swiper-button-prev"></div> 
           <div class="swiper-button-next"></div>
-        </div>
-        <div class="swiper swiper_thumbnail">
-          <div class="swiper-wrapper" id="slider2">
-            <!--<div class="swiper-slide"><img src="img/Sucursales/basilio.jpg"></div>-->
-          </div>
         </div>
       </div>
     </div>
