@@ -99,7 +99,17 @@
               </div>
             </div>
             <div class="video">
-              <video src="video/video-hero.mp4" muted loop autoplay></video>
+              <!--<video src="video/video-hero.mp4" muted loop autoplay></video>-->
+              <div class="swiper swiper_caipo">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/promociones/caipo-1.webp"></div>
+                  <div class="swiper-slide"><img src="img/promociones/caipo-2.webp"></div>
+                  <div class="swiper-slide"><img src="img/promociones/caipo-3.webp"></div>
+                </div>
+                <div class="swiper-button-prev"></div> 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
         </section>
 
@@ -508,5 +518,27 @@
                 <a href="https://dentarios.com.mx/programacion.php" target="_blank">Agencia Dentarios</a> </p>
         </footer> 
         <script src="js/scripts.js"></script>
+        <script>
+          //Script para el slider
+          const swiper = new Swiper('.swiper_caipo', {
+            // Optional parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+              delay: 1500,
+            },
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: 'true',
+            },
+          });
+        </script>
     </body>
 </html>
