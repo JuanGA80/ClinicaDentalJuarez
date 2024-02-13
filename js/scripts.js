@@ -24,39 +24,7 @@ function closeNav() {
 }
 
 
-//Script para el slider
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  slidesPerView: 1,
-  spaceBetween: 10,
-  direction: 'horizontal',
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  //breakpoints
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    },
-  },
-});
 
 var mediaqueryList = window.matchMedia("(min-width: 1024px)");
 
