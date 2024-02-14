@@ -474,7 +474,21 @@
   width: 170px;
   display: block;
 }
-.hero .botones-contacto a:nth-last-child(1) {
+.swiper-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 40px 0;
+}
+.swiper-slide button {
+    width: 200px;
+  display: block;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+.hero .botones-contacto a:nth-last-child(1),
+.swiper-slide button {
   border: 2px #daa322 solid;
   border-radius: 15px;
   justify-content: space-around;
@@ -490,7 +504,8 @@
   color: white;
   transition: all 0.275s linear;
 }
-.hero .botones-contacto a:nth-last-child(1):hover {
+.hero .botones-contacto a:nth-last-child(1):hover,
+.swiper-slide button:hover {
   background-color: #daa322;
   color: white;
   transition: all 0.275s linear;
@@ -529,7 +544,7 @@ small {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  z-index: 999;
+  z-index: 99;
 }
 .botones-flotantes a {
   width: 60px;
@@ -838,9 +853,9 @@ small {
     margin: auto;
 }
 .popup {
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: rgba(33, 44, 1, 0.95);
 	position: fixed;
-	z-index: 99;
+	z-index: 101;
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -858,9 +873,10 @@ small {
   transform: scale(1);
 }
 .popup .img {
-	width: 600px;
+	height: 80%;
 	border-radius: 5px;
 	margin: 50px 0 0 0;
+    padding: 0 1rem;
 }
 .popup .h1 {
 	font-size: 30px;
@@ -872,6 +888,12 @@ small {
 	top: 30px;
 	right: 30px;
 	font-size: 30px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.popup .bi-x-lg:hover {
+    transition: all 0.2s linear;
+    color :#E1306C;
 }
 @keyframes popup {
 	0% {
@@ -1074,6 +1096,9 @@ small {
     width: 100%;
     max-width: 1000px;
   }
+  .swiper-slide {
+    padding: 40px 0;
+  }
   .swiper-button-prev, .swiper-button-next {
     display: block !important;
     color: #0b273f !important;
@@ -1187,9 +1212,7 @@ small {
 	.popup .h1 {
 		font-size: 20px;
 	}
-	.popup .img {
-		width: 450px;
-	}
+
   .hero-sucursales {
     padding: 60px 1rem;
   }
@@ -1206,13 +1229,14 @@ small {
     padding: 0 1rem;
   }
 }
-@media (max-width:440px) {
+@media (max-width:400px) {
 	.popup .h1 {
 		font-size: 15px;
 	}
-	.popup .img {
-		width: 300px;
-	}
+    .popup .img {
+        width: 300px;
+        height: auto;
+    }
 }
 @media screen and (min-width: 1024px){
     .slider-btn i {

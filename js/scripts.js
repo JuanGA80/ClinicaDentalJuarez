@@ -3,6 +3,8 @@ const cerrar = document.getElementById("closePop");
 const modal = document.getElementById("modal");
 const ver = document.getElementById("ver-mas");
 const info = document.getElementById("mas-info")
+const container = document.getElementById('container-btn')
+const botones = container.querySelectorAll('button')
 
 ver.addEventListener('click', function () {
   info.classList.toggle('ver')
@@ -11,6 +13,14 @@ ver.addEventListener('click', function () {
   modal.classList.add("abrir");
 }, 2000);*/
 
+botones.forEach((userItem) => {
+  userItem.addEventListener('click', () => {
+    modal.classList.add("abrir");
+  })
+});
+modal.addEventListener('click', () => {
+  modal.classList.remove("abrir");
+})
 cerrar.addEventListener('click', function(){
   modal.classList.remove("abrir");
 });
