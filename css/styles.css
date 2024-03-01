@@ -14,8 +14,8 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
+    scroll-behavior: smooth;
 }
-
 .header {
     background-color: #0b273f;
     display: flex;
@@ -48,10 +48,12 @@
     font-size: 700;
     color: #eceff1;
     cursor: pointer;
+    transition: all 0.2s linear;
 }
 
 .header .nav-links li a:hover {
     color: #daa322;
+    transition: all 0.2s linear;
 }
 
 .menu, .menu-xs{
@@ -78,13 +80,14 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3 ease 0s;
+    transition: all 0.2s linear;
 }
 
 .header .btn button:hover,
 .header .menu button:hover {
     background-color: #e2f1f8;
     transform: scale(1.1);
+    transition: all 0.2s linear;
 }
 
 /*Media querys*/
@@ -134,6 +137,7 @@
 
 .header a{
     text-decoration: none;
+    transition: all 0.2s linear;
 }
 
 .header .overlay {
@@ -162,12 +166,14 @@
     display: block;
     transition: all 0.3s ease 0s;
     font-weight: 600;
+    transition: all 0.2s linear;
     color:#eceff1;
 }
 
 .header .overlay a:hover,
 .header .overlay a:focus {
     color: #daa322;
+    transition: all 0.2s linear;
 }
 
 .header .overlay .close {
@@ -472,6 +478,7 @@
   padding: 10px 15px;
   color: #0b273f;
   width: 170px;
+  transition: all 0.2s linear;
   display: block;
 }
 .swiper-slide {
