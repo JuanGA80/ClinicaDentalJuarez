@@ -144,7 +144,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     left: 0;
     top: 0;
     background-color: rgba(33, 49, 63, .95);
@@ -158,6 +158,8 @@
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    z-index: 5;
+    position: relative;
 }
 
 .header .overlay a{
@@ -181,6 +183,7 @@
     top: -10px;
     right: 17px;
     font-size: 50px;
+    z-index: 6;
 }
 
 .overlay-promo {
@@ -451,10 +454,14 @@
 }
 
 .testimonio-video {
-    height: 250px;
+    height: 210px;
     border-radius: 10px;
 }
-
+.item-opiniones span {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*Estilos de las promoiones*/
 .title, .hero .info h2 {
     margin-top: 10px;
@@ -585,10 +592,17 @@ small {
   border: 2px #25D366 solid;
   transition: all 0.275s linear;
 }
+.container-promo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .promotion {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: grid;
+    padding: 0 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 10px;
     grid-column-gap: 30px;
@@ -1138,6 +1152,7 @@ small {
     }
     .promotion {
         grid-template-columns: repeat(3, 1fr);
+        max-width: 1280px;
     }
     .contacto {
         padding-bottom: 3%;
