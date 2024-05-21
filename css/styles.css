@@ -545,6 +545,7 @@
 .hero .video video{
   width: 100%;
   border-radius: 20px;
+  aspect-ratio: 16/16;
 }
 small {
   color: #0b273f;
