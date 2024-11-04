@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!--Metadatos-->
-        <meta charset="utf-8">
-        <meta name="author" content="Clinica Dental Juarez">
-        <meta name="description" content="¡Bienvenido a Clínica Dental Juárez! Somos su destino confiable para una sonrisa saludable y hermosa. Nuestro equipo de expertos ofrece una gama completa de servicios dentales, desde limpiezas de rutina hasta tratamientos avanzados como implantes y ortodoncia. Con un enfoque en la prevención y la comodidad del paciente, estamos aquí para hacer que su experiencia dental sea excepcional. ¡Contáctenos hoy para comenzar su viaje hacia una mejor salud oral!">
-        <meta name="keywords" content="Clínica, Dental, Clínica Dental Juarez, Dentarios, Ortodoncia, Endodoncia, Extracciones">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- open graph -->
-        <meta property="og:title" content='Clínica Dental Juárez' />
-        <meta property="og:description" content='¡Bienvenido a Clínica Dental Juárez! Somos su destino confiable para una sonrisa saludable y hermosa. Nuestro equipo de expertos ofrece una gama completa de servicios dentales, desde limpiezas de rutina hasta tratamientos avanzados como implantes y ortodoncia. Con un enfoque en la prevención y la comodidad del paciente, estamos aquí para hacer que su experiencia dental sea excepcional. ¡Contáctenos hoy para comenzar su viaje hacia una mejor salud oral!' />
-        <meta property="og:type" content="website" />
-        <!--<meta property="og:url" content={url} />-->
-        <meta property="og:image" content="https://clinicadentaljuarez.dentarios.com.mx/img/Sucursales/centro.jpg" />
-        <!--Título-->
-        <title>Clínica Dental Juárez</title>
-        <!--Favicon-->
-        <link rel="icon" type="image/x-icon" href="img/favicon.png">
-        <!--CSS-->
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-        <!--Iconos-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFY9DYY8KK"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-FFY9DYY8KK');
-        </script>
-        <!-- Meta Pixel Code -->
-        <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1058191490898707');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1058191490898707&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
-    </head>
-    <body>
-        <!--Barra de navegación-->
-        <header class="header">
-                <div class="logo">
-                  <img src="img/brand-logo.png">
-                </div>
-                <nav class="navbar">
-                    <ul class="nav-links">
-                        <li><a href="#Nosotros">Nosotros</a></li>
-                        <li><a href="#Promociones">Promociones</a></li>
-                        <li><a href="#Opiniones">Opiniones</a></li>
-                        <li><a href="/sucursales.html">Sucursales</a></li>
-                    </ul>
-                </nav>
-                <a href="https://wa.me/3221121616" target="_blank" class="btn"><button>Contacto</button></a>
-                <a onclick="openNav()" href="#" class="menu-xs" id="btn-menu"><i class="bi bi-list"></i></a>
-                <a onclick="openNav()" href="#" class="menu" id="btn-menu"><button>Menú</button></a>
-                <div class="overlay" id="mobile-menu">
-                    <a onclick="closeNav()" class="close">&times;</a>
-                    <div class="overlay-content">
-                        <a href="#Nosotros" onclick="closeNav()">Nosotros</a>
-                        <a href="#Promociones" onclick="closeNav()">Promociones</a>
-                        <a href="#Opiniones" onclick="closeNav()">Opiniones</a>
-                        <a href="#Sucursales" onclick="closeNav()">Sucursales</a>
-                        <a href="https://wa.me/3221121616" target="_blank" onclick="closeNav()">Contacto</a>
-                    </div>
-                </div>
-        </header>
-        <!--pop up promociones ---------------------------------------------------
+<head>
+  <!--Metadatos-->
+  <meta charset="utf-8">
+  <meta name="author" content="Clinica Dental Juarez">
+  <meta name="description"
+    content="¡Bienvenido a Clínica Dental Juárez! Somos su destino confiable para una sonrisa saludable y hermosa. Nuestro equipo de expertos ofrece una gama completa de servicios dentales, desde limpiezas de rutina hasta tratamientos avanzados como implantes y ortodoncia. Con un enfoque en la prevención y la comodidad del paciente, estamos aquí para hacer que su experiencia dental sea excepcional. ¡Contáctenos hoy para comenzar su viaje hacia una mejor salud oral!">
+  <meta name="keywords"
+    content="Clínica, Dental, Clínica Dental Juarez, Dentarios, Ortodoncia, Endodoncia, Extracciones">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- open graph -->
+  <meta property="og:title" content='Clínica Dental Juárez' />
+  <meta property="og:description"
+    content='¡Bienvenido a Clínica Dental Juárez! Somos su destino confiable para una sonrisa saludable y hermosa. Nuestro equipo de expertos ofrece una gama completa de servicios dentales, desde limpiezas de rutina hasta tratamientos avanzados como implantes y ortodoncia. Con un enfoque en la prevención y la comodidad del paciente, estamos aquí para hacer que su experiencia dental sea excepcional. ¡Contáctenos hoy para comenzar su viaje hacia una mejor salud oral!' />
+  <meta property="og:type" content="website" />
+  <!--<meta property="og:url" content={url} />-->
+  <meta property="og:image" content="https://clinicadentaljuarez.dentarios.com.mx/img/Sucursales/centro.jpg" />
+  <!--Título-->
+  <title>Clínica Dental Juárez</title>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--Iconos-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFY9DYY8KK"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FFY9DYY8KK');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1058191490898707');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1058191490898707&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!--Barra de navegación-->
+  <header class="header">
+    <div class="logo">
+      <img src="img/brand-logo.png">
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Promociones">Promociones</a></li>
+        <li><a href="#Opiniones">Opiniones</a></li>
+        <li><a href="/sucursales.html">Sucursales</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/3221121616" target="_blank" class="btn"><button>Contacto</button></a>
+    <a onclick="openNav()" href="#" class="menu-xs" id="btn-menu"><i class="bi bi-list"></i></a>
+    <a onclick="openNav()" href="#" class="menu" id="btn-menu"><button>Menú</button></a>
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="#Nosotros" onclick="closeNav()">Nosotros</a>
+        <a href="#Promociones" onclick="closeNav()">Promociones</a>
+        <a href="#Opiniones" onclick="closeNav()">Opiniones</a>
+        <a href="#Sucursales" onclick="closeNav()">Sucursales</a>
+        <a href="https://wa.me/3221121616" target="_blank" onclick="closeNav()">Contacto</a>
+      </div>
+    </div>
+  </header>
+  <!--pop up promociones ---------------------------------------------------
         <div class="popup" id="modal">
           <i id="closePop" class="bi bi-x-lg"></i>
           <h1 class="h1">2da Feria Ambiental</h1>
           <img class="img" src="img/promociones/banner.jpeg" alt="Feria">
         </div>
         <!--Inicio Botones flotantes-->
-        <div class="botones-flotantes">
-          <a href="https://wa.me/3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
-          <a href="tel:3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone"></i></a>
-        </div>
-        <!--Fin botones flotantes-->
-        <!--Sección hero-->
-        <section class="hero">
-            <div class="info">
-              <h2>Bienvenidos a clínica Dental Juárez</h2>
-              <h1>Tu salud bucal es nuestra prioridad</h1>
-              <div class="botones-contacto">
-                <a href="https://wa.me/3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Contáctanos</a>
-                <a href="tel:3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone"></i> Llamada</a>
-              </div>
-            </div>
-            <div class="video">
-              <!-- <img src="img/promociones/septiembre.webp" alt="Promociones 16 de septiembre" /> -->
-              <video src="video/video-hero1.mp4" muted loop autoplay></video>
-              <!--<div class="swiper swiper_caipo">
+  <div class="botones-flotantes">
+    <a href="https://wa.me/3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+    <a href="tel:3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone"></i></a>
+  </div>
+  <!--Fin botones flotantes-->
+  <!--Sección hero-->
+  <section class="hero">
+    <div class="info">
+      <h2>Bienvenidos a clínica Dental Juárez</h2>
+      <h1>Tu salud bucal es nuestra prioridad</h1>
+      <div class="botones-contacto">
+        <a href="https://wa.me/3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i>
+          Contáctanos</a>
+        <a href="tel:3221121616" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone"></i> Llamada</a>
+      </div>
+    </div>
+    <div class="video">
+      <!-- <img src="img/promociones/septiembre.webp" alt="Promociones 16 de septiembre" /> -->
+      <video src="video/video-hero1.mp4" muted loop autoplay></video>
+      <!--<div class="swiper swiper_caipo">
                 <div class="swiper-wrapper" id="container-btn">
                   <div class="swiper-slide">
                     <img src="img/promociones/caipo-1.webp">
@@ -126,456 +131,479 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-pagination"></div>
               </div>-->
-            </div>
-        </section>
+    </div>
+  </section>
 
-        <section class="about-us desktop">
-            <p>
-              Con más de 20 años de experiencia, somos una Clínica Dental comprometida con la preservación de tu salud dental. 
-              Nuestro equipo altamente capacitado ofrece una amplia gama de especialidades odontológicas, respaldadas por tecnología de 
-              vanguardia. <br> <br>
-              Además de nuestras especialidades odontológicas, también nos enfocamos en la educación preventiva. 
-              Creemos que la clave para una salud bucal óptima es la combinación de tratamientos expertos y prácticas de 
-              autocuidado informadas. Nuestro personal está dedicado a proporcionar información y orientación personalizada 
-              para ayudarte a mantener una sonrisa saludable de por vida
-            </p>
-        </section>
-        <section class="about-us movil">
-          <p>
-            Con más de 20 años de experiencia, somos una Clínica Dental comprometida con la preservación de tu salud dental. 
-            Nuestro equipo altamente capacitado ofrece una amplia gama de especialidades odontológicas, respaldadas por tecnología de 
-            vanguardia.
-          </p>
-          <a id="ver-mas">Ver más</a>
-          <div class="mas-info" id="mas-info">
-            <p>Además de nuestras especialidades odontológicas, también nos enfocamos en la educación preventiva. 
-              Creemos que la clave para una salud bucal óptima es la combinación de tratamientos expertos y prácticas de 
-              autocuidado informadas. Nuestro personal está dedicado a proporcionar información y orientación personalizada 
-              para ayudarte a mantener una sonrisa saludable de por vida</p>
-              <img src="img/promociones/blanqueamiento-cuadrado-juarez.webp" alt="">
-          </div>
-      </section>
-        <!--Video testimonio
+  <section class="about-us desktop">
+    <p>
+      Con más de 20 años de experiencia, somos una Clínica Dental comprometida con la preservación de tu salud dental.
+      Nuestro equipo altamente capacitado ofrece una amplia gama de especialidades odontológicas, respaldadas por
+      tecnología de
+      vanguardia. <br> <br>
+      Además de nuestras especialidades odontológicas, también nos enfocamos en la educación preventiva.
+      Creemos que la clave para una salud bucal óptima es la combinación de tratamientos expertos y prácticas de
+      autocuidado informadas. Nuestro personal está dedicado a proporcionar información y orientación personalizada
+      para ayudarte a mantener una sonrisa saludable de por vida
+    </p>
+  </section>
+  <section class="about-us movil">
+    <p>
+      Con más de 20 años de experiencia, somos una Clínica Dental comprometida con la preservación de tu salud dental.
+      Nuestro equipo altamente capacitado ofrece una amplia gama de especialidades odontológicas, respaldadas por
+      tecnología de
+      vanguardia.
+    </p>
+    <a id="ver-mas">Ver más</a>
+    <div class="mas-info" id="mas-info">
+      <p>Además de nuestras especialidades odontológicas, también nos enfocamos en la educación preventiva.
+        Creemos que la clave para una salud bucal óptima es la combinación de tratamientos expertos y prácticas de
+        autocuidado informadas. Nuestro personal está dedicado a proporcionar información y orientación personalizada
+        para ayudarte a mantener una sonrisa saludable de por vida</p>
+      <img src="img/promociones/blanqueamiento-cuadrado-juarez.webp" alt="">
+    </div>
+  </section>
+  <!--Video testimonio
         <div class="clinica">
             <img src="img/palarax.png" alt="foto del consultorio" class="clinica-img">
             <img src="img/fondo-consultorio.jpg" alt="foto del consultorio" class="clinica-img">
         </div>-->
-        <!--Inicio Coronas-->
-        <div class="title" style="margin-top: 20px;">
-          <h2>CORONAS</h2>
-          <small>libres de metal</small>
-        </div>
-        <div class="sub" id="sub">
-          <hr class="subrayado">
-        </div>
-        <section class="coronas">
-          <video src="video/coronas1.mp4" controls></video>
-        </section>
-        <!--Fin coronas-->
-        <div class="more-info" id="parallax">
-            <div class="container-parallax">
-                <p>
-                    Calidad, calidez y compromiso 
-                    en todos nuestros servicios. <br>
-                    ¡Garantizado!
-                </p>
-                <a href="https://wa.me/3221121616" target="_blank" class="btn-mas-info">
-                    <button>Contáctanos</button>
-                </a>
-            </div>
-        </div>
-        <!--Promociones para celular-->
-        <div class="title" id="Promociones">
-          <h2>PROMOCIONES</h2>
-          <small>Da click en la imagen y agenda tu cita</small>
-        </div>
-        <div class="sub" id="sub">
-            <hr class="subrayado">
-        </div>
-        <div class="container-promo">
-          <section class="promotion">
-            <div class="promotion-item">
-              <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de cirugía de terceros morales" target="_blank">
-                  <img src="img/promociones/promo-molares.webp" alt="" class="promotion-img">
-              </a>
-            </div>
-            <div class="promotion-item">
-              <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de brackets" target="_blank">
-                  <img src="img/promociones/iniciobrackets-cuadrado-juarez.webp" alt="" class="promotion-img">
-              </a>
-            </div>
-            <div class="promotion-item">
-              <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de brackets estéticos o autoligado" target="_blank">
-                  <img src="img/promociones/promobrackets-cuadrado-juarez.webp" alt="" class="promotion-img">
-              </a>
-            </div>
-            <!--
-            <div class="promotion-item"> 
-              <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de limpieza gratis con mi membresia MultiservicesCard" target="_blank">
-                  <img src="img/promociones/brackets-cuadrado-juarez.jpg" alt="" class="promotion-img">
-              </a>
+  <!--Inicio Coronas-->
+  <div class="title" style="margin-top: 20px;">
+    <h2>CORONAS</h2>
+    <small>libres de metal</small>
+  </div>
+  <div class="sub" id="sub">
+    <hr class="subrayado">
+  </div>
+  <section class="coronas">
+    <video src="video/coronas1.mp4" controls></video>
+  </section>
+  <!--Fin coronas-->
+  <div class="more-info" id="parallax">
+    <div class="container-parallax">
+      <p>
+        Calidad, calidez y compromiso
+        en todos nuestros servicios. <br>
+        ¡Garantizado!
+      </p>
+      <a href="https://wa.me/3221121616" target="_blank" class="btn-mas-info">
+        <button>Contáctanos</button>
+      </a>
+    </div>
+  </div>
+  <!--Promociones para celular-->
+  <div class="title" id="Promociones">
+    <h2>PROMOCIONES</h2>
+    <small>Da click en la imagen y agenda tu cita</small>
+  </div>
+  <div class="sub" id="sub">
+    <hr class="subrayado">
+  </div>
+  <div class="container-promo">
+    <section class="promotion">
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de cirugía de terceros morales"
+          target="_blank">
+          <img src="img/promociones/promo-1.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de brackets"
+          target="_blank">
+          <img src="img/promociones/promo-2.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de brackets estéticos o autoligado"
+          target="_blank">
+          <img src="img/promociones/promo-3.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de limpieza gratis con mi membresia MultiservicesCard"
+          target="_blank">
+          <img src="img/promociones/promo-4.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616" target="_blank">
+          <img src="img/promociones/promo-5.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616" target="_blank">
+          <img src="img/promociones/promo-6.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de coronas libre de metal"
+          target="_blank">
+          <img src="img/promociones/promo-7.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+      <!-- <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de consulta de valoración"
+          target="_blank">
+          <img src="img/promociones/valoracion-cuadrado-juarez.jpg" alt="" class="promotion-img">
+        </a>
+      </div>
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de blanquemaineto dental."
+          target="_blank">
+          <img src="img/promociones/blanqueamiento-cuadrado-juarez.webp" alt="" class="promotion-img">
+        </a>
+      </div>
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de limpieza dental regular"
+          target="_blank">
+          <img src="img/promociones/limpieza-cuadrado-juarez.jpg" alt="" class="promotion-img">
+        </a>
+      </div>
+      <div class="promotion-item">
+        <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de limpieza dental al adquirir mi membresia"
+          target="_blank">
+          <img src="img/promociones/limpiezagratis-cuadrado-juarez.jpg" alt="" class="promotion-img">
+        </a>
+      </div> -->
+      <!--Slider con todas las promos para celular-->
+      <div class="overlay-promo" id="mobile-slider">
+        <a id="slider-close" class="close">&times;</a>
+        <div class="overlay-content container-promos">
+          <div class="slider-promos" id="slider-promos">
+
           </div>
-         
-            <div class="promotion-item"> 
-              <a href="https://wa.me/3221121616" target="_blank">
-                  <img src="img/promociones/molares-cuadrado-juarez.jpg" alt="" class="promotion-img">
-              </a>
-            </div>
-            
-            <div class="promotion-item"> 
-              <a href="https://wa.me/3221121616" target="_blank">
-                  <img src="img/promociones/corona-cuadrado-juarez.jpg" alt="" class="promotion-img">
-              </a>
-            </div>
-             -->
-            <div class="promotion-item"> 
-              <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de coronas libre de metal" target="_blank">
-                  <img src="img/promociones/coronaUrgente-cuadrado-juarez.jpg" alt="" class="promotion-img">
-              </a>
-            </div>
-            <div class="promotion-item">
-              <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de consulta de valoración" target="_blank">
-                  <img src="img/promociones/valoracion-cuadrado-juarez.jpg" alt="" class="promotion-img">
-              </a>
-            </div>
-              <div class="promotion-item">
-                  <a href="https://wa.me/3221121616?text=Buenas tardes, quiero mi promoción de blanquemaineto dental." target="_blank">
-                      <img src="img/promociones/blanqueamiento-cuadrado-juarez.webp" alt="" class="promotion-img">
-                  </a>
-              </div>
-              <div class="promotion-item">
-                  <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de limpieza dental regular" target="_blank">
-                      <img src="img/promociones/limpieza-cuadrado-juarez.jpg" alt="" class="promotion-img">
-                  </a>
-              </div>
-              <div class="promotion-item">
-                <a href="https://wa.me/3221121616?text=Buenas tardes, quiero iniciar mi tratamiento de limpieza dental al adquirir mi membresia" target="_blank">
-                    <img src="img/promociones/limpiezagratis-cuadrado-juarez.jpg" alt="" class="promotion-img">
-                </a>
-              </div>
-              <!--Slider con todas las promos para celular-->
-              <div class="overlay-promo" id="mobile-slider">
-                  <a id="slider-close" class="close">&times;</a>
-                  <div class="overlay-content container-promos">
-                      <div class="slider-promos" id="slider-promos">
-                        
-                      </div>
-                  </div>
-              </div>
-          </section>
         </div>
-        <!--Opiniones-->
-        <div class="title title-des" id="Opiniones">
-          <h2>TESTIMONIOS</h2>
-          <small>Da click para reproducir el video</small>
-        </div>
-        <div class="sub">
-            <hr class="subrayado">
-        </div>
-        <br>
-        <div class="container-opiniones">
-            <div class="item-opiniones one">
-                <div>
-                  <h6>Omar Reyes</h6>
-                  <section class="testimonio">
-                      <video src="img/testimonio-video.mp4" controls class="testimonio-video"></video>
-                  </section>
-                  <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i></span>
-                </div>
-                <div>
-                  <h6>Miguel Hdz</h6>
-                  <section class="testimonio">
-                    <video src="img/testimonio-2.mp4" controls class="testimonio-video"></video>
-                  </section>
-                  <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i></span>
-                </div>
-            </div>
-            <div class="item-opiniones two">
-              <div>
-                <h6>Karla Pérez</h6>
-                <section class="testimonio">
-                    <video src="img/testimonio-3.mp4" controls class="testimonio-video"></video>
-                </section>
-                <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i></span>
-              </div>
-              <div>
-                <h6>Marisela</h6>
-                <section class="testimonio">
-                  <video src="img/testimonio-4.mp4" controls class="testimonio-video"></video>
-                </section>
-                <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i></span>
-              </div>
-            </div>
-            <div class="item-opiniones four">
-              <div>
-                <h6>Karen</h6>
-                <section class="testimonio">
-                    <video src="video/VID-20231123-WA0018.mp4" controls class="testimonio-video"></video>
-                </section>
-                <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i></span>
-              </div>
-              <div>
-                <h6>David</h6>
-                <section class="testimonio">
-                  <video src="video/testimonio-2.mp4" controls class="testimonio-video"></video>
-                </section>
-                <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i></span>
-              </div>
-            </div>
-            <div class="item-opiniones five">
-              <div>
-                <h6>Priscila</h6>
-                  <section class="testimonio">
-                    <video src="video/juarez-tsti.mp4" controls class="testimonio-video"></video>
-                  </section>
-                  <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i></span>
-              </div>
-            </div>
-        </div>
-        <!--Opiniones-->
-        <div class="title title-des" id="Resenas">
-          <h2>RESEÑAS</h2>
-        </div>
-        <div class="sub">
-            <hr class="subrayado">
-        </div>
-        <section class="resenas">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="item-resena">
-                  <div>
-                    <img src="img/clientes/cliente1.png" alt="">
-                    <h4>Ursula Muñoz Manrique</h4>
-                  </div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Excelente servicio, amabilidad y eficacia en su trabajo, cumplen a tiempo y son muy accesibles los doctores.
-                    Lleve a mis primos de Estados Unidos y quedaron también muy contentos con el trato de primera y los precios.
-                    Gracias a todas las Clínicas Dental Juárez.</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-resena">
-                  <div>
-                    <img src="img/clientes/cliente2.png" alt="">
-                    <h4>Paulina Torres</h4>
-                  </div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Excelente servicio, tratamientos sin dolor...
-                    El Dr Alan es experto en carillas de resina.
-                    SUPER RECOMENDADOS✨️</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-resena">
-                  <div>
-                    <img src="img/clientes/cliente3.png" alt="">
-                    <h4>Alan Ramirez</h4>
-                  </div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Excelente servicio!
-                    Los mejores de la zona</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-resena">
-                  <div>
-                    <img src="img/clientes/cliente4.png" alt="">
-                    <h4>anni Talavera2012</h4>
-                  </div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Excelente servicio en poco tiempo mi tratamiento de ortodoncia me a cambiado mi sonrisa 😃 muy amable la doctora 
-                    muy recomendable ☺️⭐⭐⭐⭐ 👌</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-resena">
-                  <div>
-                    <img src="img/clientes/cliente5.png" alt="">
-                    <h4>perla rivera flores</h4>
-                  </div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Excelente servicio y muy amable doctora, realmente recomiendo que asistan a ese lugar☺️</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="item-resena">
-                  <div>
-                    <img src="img/clientes/cliente6.png" alt="">
-                    <h4>Gabriel Peña Gonzalez</h4>
-                  </div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Excelente Clínica Dental, con la mejor atención y trato que hay, super recomendable!!</p>
-                </div>
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>            
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </div>
+  <!--Opiniones-->
+  <div class="title title-des" id="Opiniones">
+    <h2>TESTIMONIOS</h2>
+    <small>Da click para reproducir el video</small>
+  </div>
+  <div class="sub">
+    <hr class="subrayado">
+  </div>
+  <br>
+  <div class="container-opiniones">
+    <div class="item-opiniones one">
+      <div>
+        <h6>Omar Reyes</h6>
+        <section class="testimonio">
+          <video src="img/testimonio-video.mp4" controls class="testimonio-video"></video>
         </section>
-        <!--Contactanos-->
-        <div class="container-contacto title-des">
-            <div class="title"><h2>CONTACTO</h2></div>
-            <div class="sub">
-                <hr class="subrayado">
+        <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i></span>
+      </div>
+      <div>
+        <h6>Miguel Hdz</h6>
+        <section class="testimonio">
+          <video src="img/testimonio-2.mp4" controls class="testimonio-video"></video>
+        </section>
+        <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i></span>
+      </div>
+    </div>
+    <div class="item-opiniones two">
+      <div>
+        <h6>Karla Pérez</h6>
+        <section class="testimonio">
+          <video src="img/testimonio-3.mp4" controls class="testimonio-video"></video>
+        </section>
+        <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i></span>
+      </div>
+      <div>
+        <h6>Marisela</h6>
+        <section class="testimonio">
+          <video src="img/testimonio-4.mp4" controls class="testimonio-video"></video>
+        </section>
+        <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i></span>
+      </div>
+    </div>
+    <div class="item-opiniones four">
+      <div>
+        <h6>Karen</h6>
+        <section class="testimonio">
+          <video src="video/VID-20231123-WA0018.mp4" controls class="testimonio-video"></video>
+        </section>
+        <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i></span>
+      </div>
+      <div>
+        <h6>David</h6>
+        <section class="testimonio">
+          <video src="video/testimonio-2.mp4" controls class="testimonio-video"></video>
+        </section>
+        <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i></span>
+      </div>
+    </div>
+    <div class="item-opiniones five">
+      <div>
+        <h6>Priscila</h6>
+        <section class="testimonio">
+          <video src="video/juarez-tsti.mp4" controls class="testimonio-video"></video>
+        </section>
+        <span><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i></span>
+      </div>
+    </div>
+  </div>
+  <!--Opiniones-->
+  <div class="title title-des" id="Resenas">
+    <h2>RESEÑAS</h2>
+  </div>
+  <div class="sub">
+    <hr class="subrayado">
+  </div>
+  <section class="resenas">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="item-resena">
+            <div>
+              <img src="img/clientes/cliente1.png" alt="">
+              <h4>Ursula Muñoz Manrique</h4>
             </div>
-            <div class="contacto contacto-desk">
-                <p class="consulta-movil">¿Necesitas una consulta? Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
-                <p class="consulta-desk title-con">¿Necesitas una consulta?</p>
-                <p class="consulta-desk"> Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
-                <div class="wa">
-                    <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i> 3221121616</a>
-                </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
             </div>
-            <div class="contacto-desktop">
-                <h4>Contáctanos</h4>
-                <div class="contenido-contacto">
-                    <a href="tel:3221121616"><i class="bi bi-telephone"></i></a>
-                    <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i> 3221121616</a>
-                    <a href="https://www.facebook.com/DENTAL.JUAREZ.661/" target="_blank"><i class="bi bi-facebook"></i></a>
-                </div>
+            <p>Excelente servicio, amabilidad y eficacia en su trabajo, cumplen a tiempo y son muy accesibles los
+              doctores.
+              Lleve a mis primos de Estados Unidos y quedaron también muy contentos con el trato de primera y los
+              precios.
+              Gracias a todas las Clínicas Dental Juárez.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item-resena">
+            <div>
+              <img src="img/clientes/cliente2.png" alt="">
+              <h4>Paulina Torres</h4>
             </div>
-        </div>
-        <!--Sucursales-->
-        <div class="title title-des" id="Sucursales"><h2>SUCURSALES</h2></div>
-        <div class="sub  sub-sucursal">
-            <hr class="subrayado b">
-        </div>
-        <div class="container-sucursales">
-            <a href="https://goo.gl/maps/TxLUKv73uqAp82Gb9" target="_blank">
-                <div class="direccion">
-                    <h3>CENTRO</h3>
-                    <p>Juárez 661, Centro, 48300, Pto Vallarta, Jalisco</p>
-                </div>
-            </a>
-            <a href="https://goo.gl/maps/Wk5SyGrrxaBpZYTr6">
-                <div class="direccion">
-                    <h3>PITILLAL</h3>
-                    <p>Indepedencia 150, Centro Pitillal, Pto Vallarta</p>
-                </div>
-            </a>
-            <a href="https://goo.gl/maps/UtdqjwwJpg3wSzun8">
-                <div class="direccion">
-                    <h3>LAS JUNTAS</h3>
-                    <p>Car.Tepic Vta 5446-A, Crucero de las juntas, Pto Vallarta</p>
-                </div>
-            </a>
-            <a href="https://goo.gl/maps/Q9vvr6hyrXEzdUq8A">
-                <div class="direccion">
-                    <h3>BASILIO BADILLO</h3>
-                    <p>Basilio Badillo 317, Emiliano Zapata, Pto Vallarta</p>
-                </div>
-            </a>
-            <a href="https://goo.gl/maps/g79KiipmFz31Xpoh9">
-                <div class="direccion">
-                    <h3>MEZCALES</h3>
-                    <p>Car. Tepic Vta 343, Av. México y San Luis Mezcales</p>
-                </div>
-            </a>
-            <a href="https://goo.gl/maps/pzWdF7mBcACbrGs98">
-                <div class="direccion">
-                    <h3>SAN JOSÉ</h3>
-                    <p>Av. Constitución #3 loc 6, Plaza San José del Valle, Nayarit</p>
-                </div>
-            </a>
-        </div>
-        <div class="direccion horario">
-            <h3>HORARIO</h3>
-            <p>Lunes a Viernes de 10:00 a 14:00 hrs y
-                16:00 a 20:30 hrs
-                Sábados 09:00 a 16:00 hrs.</p>
-        </div>
-        <!--Footer-->
-        <footer class="footer">
-            <h4>Síguenos en todas nuestras redes sociales</h4>
-            <div class="icons-rs">
-                <a href="https://www.facebook.com/DENTAL.JUAREZ.661/" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/dental.juarez.661/?utm_medium=copy_link" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.tiktok.com/@dental.juarez.vallarta?_t=8a6LxV756He&_r=1" target="_blank"><i class="bi bi-tiktok"></i></a>
-                <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                <a href="tel:3221121616"><i class="bi bi-telephone"></i></a>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
             </div>
-            <p>© Clínica dental Juárez.Todos los derechos reservados | Desing by
-                <a href="https://dentarios.com.mx/programacion.php" target="_blank">Agencia Dentarios</a> </p>
-        </footer> 
-        <script src="js/scripts.js"></script>
-        <script>
-          //Script para el slider
-          const swiper = new Swiper('.swiper_caipo', {
-            // Optional parameters
-            slidesPerView: 1,
-            spaceBetween: 10,
-            direction: 'horizontal',
-            loop: true,
-            autoplay: {
-              delay: 2500,
-            },
-            // Navigation arrows
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: 'true',
-            },
-          });
-        </script>
-    </body>
+            <p>Excelente servicio, tratamientos sin dolor...
+              El Dr Alan es experto en carillas de resina.
+              SUPER RECOMENDADOS✨️</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item-resena">
+            <div>
+              <img src="img/clientes/cliente3.png" alt="">
+              <h4>Alan Ramirez</h4>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>Excelente servicio!
+              Los mejores de la zona</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item-resena">
+            <div>
+              <img src="img/clientes/cliente4.png" alt="">
+              <h4>anni Talavera2012</h4>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>Excelente servicio en poco tiempo mi tratamiento de ortodoncia me a cambiado mi sonrisa 😃 muy amable la
+              doctora
+              muy recomendable ☺️⭐⭐⭐⭐ 👌</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item-resena">
+            <div>
+              <img src="img/clientes/cliente5.png" alt="">
+              <h4>perla rivera flores</h4>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>Excelente servicio y muy amable doctora, realmente recomiendo que asistan a ese lugar☺️</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item-resena">
+            <div>
+              <img src="img/clientes/cliente6.png" alt="">
+              <h4>Gabriel Peña Gonzalez</h4>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>Excelente Clínica Dental, con la mejor atención y trato que hay, super recomendable!!</p>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </section>
+  <!--Contactanos-->
+  <div class="container-contacto title-des">
+    <div class="title">
+      <h2>CONTACTO</h2>
+    </div>
+    <div class="sub">
+      <hr class="subrayado">
+    </div>
+    <div class="contacto contacto-desk">
+      <p class="consulta-movil">¿Necesitas una consulta? Acércate con nosotros y obtén la asesoría adecuada para
+        comenzar tu tratamiento.</p>
+      <p class="consulta-desk title-con">¿Necesitas una consulta?</p>
+      <p class="consulta-desk"> Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
+      <div class="wa">
+        <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i> 3221121616</a>
+      </div>
+    </div>
+    <div class="contacto-desktop">
+      <h4>Contáctanos</h4>
+      <div class="contenido-contacto">
+        <a href="tel:3221121616"><i class="bi bi-telephone"></i></a>
+        <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i> 3221121616</a>
+        <a href="https://www.facebook.com/DENTAL.JUAREZ.661/" target="_blank"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+  <!--Sucursales-->
+  <div class="title title-des" id="Sucursales">
+    <h2>SUCURSALES</h2>
+  </div>
+  <div class="sub  sub-sucursal">
+    <hr class="subrayado b">
+  </div>
+  <div class="container-sucursales">
+    <a href="https://goo.gl/maps/TxLUKv73uqAp82Gb9" target="_blank">
+      <div class="direccion">
+        <h3>CENTRO</h3>
+        <p>Juárez 661, Centro, 48300, Pto Vallarta, Jalisco</p>
+      </div>
+    </a>
+    <a href="https://goo.gl/maps/Wk5SyGrrxaBpZYTr6">
+      <div class="direccion">
+        <h3>PITILLAL</h3>
+        <p>Indepedencia 150, Centro Pitillal, Pto Vallarta</p>
+      </div>
+    </a>
+    <a href="https://goo.gl/maps/UtdqjwwJpg3wSzun8">
+      <div class="direccion">
+        <h3>LAS JUNTAS</h3>
+        <p>Car.Tepic Vta 5446-A, Crucero de las juntas, Pto Vallarta</p>
+      </div>
+    </a>
+    <a href="https://goo.gl/maps/Q9vvr6hyrXEzdUq8A">
+      <div class="direccion">
+        <h3>BASILIO BADILLO</h3>
+        <p>Basilio Badillo 317, Emiliano Zapata, Pto Vallarta</p>
+      </div>
+    </a>
+    <a href="https://goo.gl/maps/g79KiipmFz31Xpoh9">
+      <div class="direccion">
+        <h3>MEZCALES</h3>
+        <p>Car. Tepic Vta 343, Av. México y San Luis Mezcales</p>
+      </div>
+    </a>
+    <a href="https://goo.gl/maps/pzWdF7mBcACbrGs98">
+      <div class="direccion">
+        <h3>SAN JOSÉ</h3>
+        <p>Av. Constitución #3 loc 6, Plaza San José del Valle, Nayarit</p>
+      </div>
+    </a>
+  </div>
+  <div class="direccion horario">
+    <h3>HORARIO</h3>
+    <p>Lunes a Viernes de 10:00 a 14:00 hrs y
+      16:00 a 20:30 hrs
+      Sábados 09:00 a 16:00 hrs.</p>
+  </div>
+  <!--Footer-->
+  <footer class="footer">
+    <h4>Síguenos en todas nuestras redes sociales</h4>
+    <div class="icons-rs">
+      <a href="https://www.facebook.com/DENTAL.JUAREZ.661/" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/dental.juarez.661/?utm_medium=copy_link" target="_blank"><i
+          class="bi bi-instagram"></i></a>
+      <a href="https://www.tiktok.com/@dental.juarez.vallarta?_t=8a6LxV756He&_r=1" target="_blank"><i
+          class="bi bi-tiktok"></i></a>
+      <a href="https://wa.me/3221121616" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      <a href="tel:3221121616"><i class="bi bi-telephone"></i></a>
+    </div>
+    <p>© Clínica dental Juárez.Todos los derechos reservados | Desing by
+      <a href="https://dentarios.com.mx/programacion.php" target="_blank">Agencia Dentarios</a>
+    </p>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script>
+    //Script para el slider
+    const swiper = new Swiper('.swiper_caipo', {
+      // Optional parameters
+      slidesPerView: 1,
+      spaceBetween: 10,
+      direction: 'horizontal',
+      loop: true,
+      autoplay: {
+        delay: 2500,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: 'true',
+      },
+    });
+  </script>
+</body>
+
 </html>
